@@ -1,0 +1,23 @@
+{
+  "name": "web_crawler",
+  "version": "1.0.0",
+  "description": "A web crawler application that uses Node.js to scourer the web",
+  "main": "app.js",
+  "scripts": {
+    "test": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stefanbenincasa/web_crawler.git"
+  },
+  "author": "Stefan Benincasa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stefanbenincasa/web_crawler/issues"
+  },
+  "homepage": "https://github.com/stefanbenincasa/web_crawler#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7"
+  }
+}
