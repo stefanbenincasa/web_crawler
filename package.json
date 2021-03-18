@@ -4,7 +4,8 @@
   "description": "A web crawler application that uses Node.js to scourer the web",
   "main": "app.js",
   "scripts": {
-    "test": "nodemon app.js"
+    "test": "nodemon app.js",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,7 @@
   "homepage": "https://github.com/stefanbenincasa/web_crawler#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "nodemon": "^2.0.7"
+    "nodemon": "^2.0.7",
+    "postman-request": "^2.88.1-postman.28"
   }
 }
