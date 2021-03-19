@@ -8,10 +8,15 @@ const fs = require('fs')
 const port = 5000
 const title = 'Web Crawler' 
 const app = express()
+const pathToStatic = path.join(__dirname, '/src/assets')
+
+app.use(express.static(pathToStatic))
 
 // Routes //
-app.use('/', (req, res) => {
-  res.send('Welcome to Web Crawler.')
+app.get('/', (req, res) => {
+  res.sendFile('index.html', {
+		root: pathToStatic + '/pages'
+	})
 }) 
 
 // Execution //
