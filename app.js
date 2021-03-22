@@ -1,4 +1,5 @@
 // Import //
+const routes = require('./src/routers/routes')
 const express = require('express')
 const request = require('postman-request')
 const path = require('path')
@@ -8,17 +9,10 @@ const fs = require('fs')
 const port = 5000
 const title = 'Web Crawler' 
 const app = express()
-const pathToStatic = path.join(__dirname, '/src/assets')
-
-app.use(express.static(pathToStatic))
+app.use(express.static(path.join(__dirname, '/src/assets')))
 
 // Routes //
-// app
-app.get('/', (req, res) => {
-  res.sendFile('index.html', {
-		root: pathToStatic + '/pages'
-	})
-}) 
+app.use('/', routes)
 
 // Execution //
 app.listen(port, () => {
