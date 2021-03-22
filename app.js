@@ -13,6 +13,7 @@ const pathToStatic = path.join(__dirname, '/src/assets')
 app.use(express.static(pathToStatic))
 
 // Routes //
+// app
 app.get('/', (req, res) => {
   res.sendFile('index.html', {
 		root: pathToStatic + '/pages'

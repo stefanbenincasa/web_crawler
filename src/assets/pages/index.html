@@ -9,9 +9,24 @@
 	</head>
 
 	<body>
-		<div class='wrapper p-2'>
-			<h1>Web Crawler</h1> 
-			<small>Welcome to the Web Crawler !</small>
+		<div class='vh-100 p-5 d-flex flex-column justify-content-center align-items-center'>
+      <main class='h-75 w-75 my-auto d-flex flex-column justify-content-start align-items-start'> 
+        <div id='mainHeadings' class='row w-100'>
+          <div class='col-xs-12'>
+            <h1 class='text-center'>Web Crawler</h1> 
+            <p class='m-auto text-center'>Welcome!</p>
+          </div>
+        </div> 
+        <form onSubmit='e => e.preventDefault()' action='/submit' class='w-100 my-5 p-4 rounded bg-light'>
+          <fieldset class='form-group row m-0'>
+            <div class='col-xs-12 w-100 p-0'> <label for='seedInput' class='form-label w-100'>Input Seed Site</label> </div> 
+            <div class='col-xs-12 w-100 p-0'> <input id='seedInput' class='form-control w-100' type='url'/> </div>
+            <div class='col-xs-3 w-100 my-4 p-0 d-flex justify-content-end'>  
+              <button id='go' class='btn btn-primary shadow d-block' type='submit'>Search</button> 
+            </div>  
+          </fieldset>
+        </form>
+      </main>
 		</div> 
 	</body>
 
